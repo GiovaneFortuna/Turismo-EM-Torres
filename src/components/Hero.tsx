@@ -1,15 +1,28 @@
-const capaIMG = "/imagens/capa/capa.PNG";
+const capaDesktop = "/imagens/capa/capa.PNG";
+const capaMobile = "/imagens/capa/capa_mobile.png";
 
 export default function Hero() {
   return (
-    <section className="relative w-full">
-      <div className="relative w-full h-[620px] md:h-[960px] overflow-hidden">
-        <img src={capaIMG} alt="Torres" className="w-full h-full object-cover object-center" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/40" />
-        <div className="absolute inset-0 flex items-end justify-center pb-16">
-       
-        </div>
-      </div>
+    <section className="relative w-full h-screen overflow-hidden">
+      
+      {/* Capa mobile */}
+      <img
+        src={capaMobile}
+        alt="Turismo em Torres"
+        className="block sm:hidden absolute inset-0 w-full h-full object-cover object-top"
+      />
+
+      {/* Capa desktop */}
+     {/* Capa desktop */}
+<img
+  src={capaDesktop}
+  alt="Turismo em Torres"
+  className="hidden sm:block w-full h-full object-cover object-[center_5%]"
+/>
+
+      {/* Gradiente */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/30 pointer-events-none" />
+
     </section>
   );
 }
