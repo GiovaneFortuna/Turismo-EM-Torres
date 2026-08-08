@@ -1,8 +1,8 @@
 export const passeios = [
   {
     img: "/imagens/passeios/balao_ar_quente.jpeg",
-    alt: "Passeio de Paramotor",
-    title: "Passeio de Paramotor",
+    alt: "Passeio de Balão de Ar quente",
+    title: "Passeio de Balão de Ar quente",
     desc: "Voo panorâmico."
   },
   {
